@@ -29,7 +29,7 @@ weibo
 
 ## 本程序用到的较为复杂的sql查询语句
 - 查询关注我的人的微博和时间
-'''
+' ' '
 select n.user_name, m.weibo_content, m.weibo_id, m.weibo_time
 
 from (select a.attention_user_id, c.weibo_content, c.weibo_id, c.weibo_time 
@@ -37,9 +37,9 @@ from (select attention_user_id from weibo.attention where user_id = 2525) a join
 on a.attention_user_id = c.user_id) m join weibo.user n
 
 on m.attention_user_id = n.user_id
-'''
+' ' '
 - 查询最热微博及评论
-'''
+' ' '
 select m.user_name, m.weibo_content, m.weibo_time, n.comment_content, m.comment_number
 
 
@@ -51,5 +51,5 @@ order by a.comment_number DESC LIMIT 10) m join weibo.comment n
 on m.weibo_id = n.weibo_id
 group by m.user_name, m.weibo_content, m.weibo_time, n.comment_content, m.comment_number
 order by m.comment_number DESC 
-'''
+' ' '
 
