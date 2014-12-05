@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>register</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form method="post" name="frmRegister" action="RegisterServlet">
+            <h1 align="center">用户注册</h1><br>
+            <div align="center">请输入用户名：
+                <input type="text" name="txtUserName" value="Your name"
+                       size="20" maxlength="20"
+                       onfocus="if (this.value == 'Your name')
+                                   this.value = '';"><br>请输入密码：
+                <input type="password" name="txtPassword" value="Your password"
+                       size="20" maxlength="20"
+                       onfocus="if (this.value == 'Your password')
+                                   this.value = '';"><br>请输入您的电子邮箱：
+                <input type="text" name="txtEmail" value="Your email"
+                       size="20" maxlength="50"
+                       onfocus="if (this.value == 'Your email')
+                                   this.value = '';"><br>请输入您的个人简介：
+                <input type="text" name="txtDescription" value="Your description"
+                       size="20" maxlength="100"
+                       onfocus="if (this.value == 'Your description')
+                                   this.value = '';"><br>
+                <input type="submit" name="Submit"　value="提交" onClick="validateRegister();" >
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" name="Reset" value="重置"><br>
+            </div>
+        </form>
+        <!-- javaScript 函数 validateLogin(),用来验证用户名和密码是否为空 -->
+        <script language="javaScript">
+            function validateRegister()
+            {
+                var sUserName = document.frmRegister.txtUserName.value;
+                var sPassword = document.frmRegister.txtPassword.value;
+                var sEmail = document.frmRegister.txtEmail.value;
+                if (sUserName == "")
+                {
+                    alert("请输入用户名！");
+                    return false;
+                }
+                if (sPassword == "")
+                {
+                    alert("请输入密码！");
+                    return false;
+                }
+                if (sEmail == "")
+                {
+                    alert("请输入电子邮箱！");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

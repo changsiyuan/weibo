@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+    <servlet>
+        <display-name>LoginServlet</display-name>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>zieckey.login.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <display-name>RegisterServlet</display-name>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>zieckey.login.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <display-name>SearchUserServlet</display-name>
+        <servlet-name>SearchUserServlet</servlet-name>
+        <servlet-class>zieckey.login.servlet.SearchUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchUserServlet</servlet-name>
+        <url-pattern>/SearchUserServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <display-name>SubmitWeiboServlet</display-name>
+        <servlet-name>SubmitWeiboServlet</servlet-name>
+        <servlet-class>zieckey.login.servlet.SubmitWeiboServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubmitWeiboServlet</servlet-name>
+        <url-pattern>/SubmitWeiboServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <display-name>AttentionServlet</display-name>
+        <servlet-name>AttentionServlet</servlet-name>
+        <servlet-class>zieckey.login.servlet.AttentionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AttentionServlet</servlet-name>
+        <url-pattern>/AttentionServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <display-name>UnfollowServlet</display-name>
+        <servlet-name>UnfollowServlet</servlet-name>
+        <servlet-class>zieckey.login.servlet.UnfollowServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UnfollowServlet</servlet-name>
+        <url-pattern>/UnfollowServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    <servlet>
+        <display-name>AttentionMeServlet</display-name>
+        <servlet-name>AttentionMeServlet</servlet-name>
+        <servlet-class>zieckey.login.servlet.AttentionMeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AttentionMeServlet</servlet-name>
+        <url-pattern>/AttentionMeServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    <servlet>
+        <display-name>MyAttentionServlet</display-name>
+        <servlet-name>MyAttentionServlet</servlet-name>
+        <servlet-class>zieckey.login.servlet.MyAttentionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyAttentionServlet</servlet-name>
+        <url-pattern>/MyAttentionServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    <servlet>
+        <display-name>MyAttentionWeiboServlet</display-name>
+        <servlet-name>MyAttentionWeiboServlet</servlet-name>
+        <servlet-class>zieckey.login.servlet.MyAttentionWeiboServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyAttentionWeiboServlet</servlet-name>
+        <url-pattern>/MyAttentionWeiboServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    
+    <servlet>
+        <display-name>MostPopularWeiboServlet</display-name>
+        <servlet-name>MostPopularWeiboServlet</servlet-name>
+        <servlet-class>zieckey.login.servlet.MostPopularWeiboServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MostPopularWeiboServlet</servlet-name>
+        <url-pattern>/MostPopularWeiboServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+   
+    <servlet>
+        <display-name>SearchMyWeiboServlet</display-name>
+        <servlet-name>SearchMyWeiboServlet</servlet-name>
+        <servlet-class>zieckey.login.servlet.SearchMyWeiboServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchMyWeiboServlet</servlet-name>
+        <url-pattern>/SearchMyWeiboServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    <servlet>
+        <display-name>DeleteWeiboServlet</display-name>
+        <servlet-name>DeleteWeiboServlet</servlet-name>
+        <servlet-class>zieckey.login.servlet.DeleteWeiboServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteWeiboServlet</servlet-name>
+        <url-pattern>/DeleteWeiboServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+
+    <servlet>
+        <display-name>CommentAttentionWeiboServlet</display-name>
+        <servlet-name>CommentAttentionWeiboServlet</servlet-name>
+        <servlet-class>zieckey.login.servlet.CommentAttentionWeiboServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CommentAttentionWeiboServlet</servlet-name>
+        <url-pattern>/CommentAttentionWeiboServlet</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    
+    <servlet>
+        <display-name>SubmitCommentServlet</display-name>
+        <servlet-name>SubmitCommentServlet</servlet-name>
+        <servlet-class>zieckey.login.servlet.SubmitCommentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubmitCommentServlet</servlet-name>
+        <url-pattern>/SubmitCommentServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>登录</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Language" content="ch-cn">
+    </head>
+    <body>
+        <!-- Form 用来提取用户填入并提交的信息-->
+        <form method="post" name="frmLogin" action="LoginServlet">
+            <h1 align="center">请您登陆微博</h1><br>
+            <div align="center">用户名：
+                <input type="text" name="txtUserName" value="Your name"
+                       size="20" maxlength="20"
+                       onfocus="if (this.value == 'Your name')
+                   this.value = '';"><br>密码：
+                <input type="password" name="txtPassword" value="Your password"
+                       size="20" maxlength="20"
+                       onfocus="if (this.value == 'Your password')
+                   this.value = '';"><br>
+                <input type="submit" name="Submit"　value="提交" onClick="validateLogin();" >
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="reset" name="Reset" value="重置"><br>
+                <a href="register.html"><button type="button" class="btn-link">还没有账户？请单击这里注册</button></a>
+            </div>
+        </form>
+        <!-- javaScript 函数 validateLogin(),用来验证用户名和密码是否为空 -->
+        <script language="javaScript">
+            function validateLogin()
+            {
+                var sUserName = document.frmLogin.txtUserName.value;
+                var sPassword = document.frmLogin.txtPassword.value;
+                if (sUserName == "")
+                {
+                    alert("请输入用户名！");
+                    return false;
+                }
+                if (sPassword == "")
+                {
+                    alert("请输入密码！");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>
