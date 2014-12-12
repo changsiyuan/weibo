@@ -32,7 +32,8 @@ weibo
 - jsp文件放在weibo/web下；
 - servlet文件放在weibo/src/java/zieckey/login/servlet下；
 - servlet配置文件在weibo/web/WEB-INF/web.xml；
-- 微博的截图在img文件夹下；
+- 微博功能设计草图、微博的截图在img文件夹下；
+- 数据库表结构在database文件夹下；
 
 ## 本程序用到的较为复杂的sql查询语句
 - 查询关注我的人的微博和时间
