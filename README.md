@@ -28,6 +28,12 @@ weibo
 - servlet和jsp通信是通过session，servlet将查询数据库表的结果放在session中，jsp从session取出想要的数据，并在前端显示。
 - 删除微博功能的设计思路如下：将每条微博的“删除”按钮赋予一个id（在显示微博的时候顺便通过for循环赋予），而这个id正好是这条微博在list中的偏移量，这样就将微博在list偏移量的信息传递给servlet，从而使得servlet找到这条微博在数据库表中的id，实现删除。
 
+## 本程序的组织结构
+- jsp文件放在weibo/web下；
+- servlet文件放在weibo/src/java/zieckey/login/servlet下；
+- servlet配置文件在weibo/web/WEB-INF/web.xml；
+- 微博的截图在img文件夹下；
+
 ## 本程序用到的较为复杂的sql查询语句
 - 查询关注我的人的微博和时间
 ```
