@@ -2,9 +2,9 @@
 
 1. 如果用户名输入  
 
-  ` ` `
-  ' or 1=1 limit 1  --
-  ` ` `
+` ` `
+' or 1=1 limit 1  --
+` ` `
 
   此时在loginservlet中会执行拼接成的完整的sql语句：
   
@@ -98,6 +98,8 @@ public class Weibo {
 ```
 
 在servlet中，不再将微博的属性放到数组中，而是利用weibo对象的set方法：
+
+```
   ArrayList<Weibo> weibo = new ArrayList<Weibo>();
 
   Weibo w = new Weibo();
@@ -109,7 +111,7 @@ public class Weibo {
 
   weibo.add(w);
   request.getSession().setAttribute("myWeiboList", weibo);
-  ```
+```
   
 然后依次将每个微博对象压入list中。然后再将list放到session中。
 jsp从session中取出list（即若干个微博对象），然后通过如下方法显示：
